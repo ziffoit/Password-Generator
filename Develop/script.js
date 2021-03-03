@@ -23,9 +23,25 @@ function generatePassword() {
   var useLowercase = window.prompt('Do you want lowercase letters? (Y/N)').toUpperCase();
    if (useLowercase === 'Y') {
      allowedChars = allowedChars.concat(lowerCase)
-   }
+  }
 
-  //  todo other character sets
+  var useUppercase = window.prompt('Do you want uppercase letters? (Y/N)').toUpperCase();
+   if (useUppercase === 'Y') {
+     allowedChars = allowedChars.concat(UpperCase)
+  }
+
+  var useNumbers = window.prompt('Do you want numbers? (Y/N)').toUpperCase();
+   if (useNumbers === 'Y') {
+     allowedChars = allowedChars.concat(numbers)
+  }
+
+  var useSpecialChar = window.prompt('Do you want special characters? (Y/N)').toUpperCase();
+   if (useSpecialChar === 'Y') {
+     allowedChars = allowedChars.concat(specialChar)
+  }
+
+
+   //  todo other character sets
 
   if (allowedChars === []) {
     window.alert("There is no secret cow level.")
