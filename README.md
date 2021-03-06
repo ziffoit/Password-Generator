@@ -13,3 +13,7 @@
 ### deployed application
 
 https://ziffoit.github.io/Password-Generator/
+
+### Screenshot
+
+![screenshot](assets/Password-Generator.png)
